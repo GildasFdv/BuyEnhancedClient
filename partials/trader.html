@@ -1,0 +1,13 @@
+<main>
+    <h2 id="traderTitle">Listes des souscriptions</h2>
+    <section id="traderSection">
+        <div class="trader" ng-repeat="trader in traderList">
+            <h5>{{trader.encryptedUid}}</h5>
+            <div>
+                <button class="button {{traderButtonBackColor}}" ng-click="onClickActionButtonEventHandler(trader.index)">{{trader.actionButtonText}}</button>
+                <a href="#!/socketInformation/trader" class="button classicColor" ng-click="openTraderSocket(trader.index)">Informations</a>
+                <img class="deleteButton" ng-click="onClickDeleteButtonEventHandler(trader.index)" src="/img/cross.png">
+            </div>
+        </div>
+    </section>
+</main>

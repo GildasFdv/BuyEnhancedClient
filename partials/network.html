@@ -1,0 +1,34 @@
+<main>
+    <section class="networkSection">
+        <h3>Statistiques des proxies</h3>
+        <div class="statSection">
+            <div>
+                <p class="networkDivTitle">COUNT</p>
+                <p id="countField" class="networkDivContent {{proxiesCountClassColor}}">{{proxyCount}} proxies</p>
+            </div>
+            <div>
+                <p class="networkDivTitle">POURCENTAGE</p>
+                <p id="pourcentageField" class="networkDivContent {{pourcentageClassColor}}">{{removePourcentage}} %</p>
+            </div>
+        </div>
+    </section>
+    <section class="networkSection">
+        <h3>Gestion des proxies</h3>
+        <div class="manageSection">
+            <div>
+                <h4 class="networkDivTitle">Remove</h4>
+                <div>
+                    <button ng-click="removeButtonClickEventHandler()" class="button {{removeButtonBackColor}}">{{removeButtonText}}</button>
+                    <a href="#!/socketInformation/remove" class="button classicColor">Informations</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="networkDivTitle">Add</h4>
+                <div>
+                    <button ng-click="addButtonClickEventHandler()" class="button {{addButtonBackColor}}">{{addButtonText}}</button>
+                    <a class="button classicColor" href="#!/socketInformation/add">Informations</a>
+                </div>
+            </div>             
+        </div>
+    </section>
+</main>

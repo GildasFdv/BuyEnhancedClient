@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "ibm-plex-sans", sans-serif;
+    overflow:hidden;  
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-color : rgb(16, 16, 19);
+}
+
+/*________________ Bandeau _________________*/
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10.4vh;
+    background-color: rgb(27, 28, 34);
+    border-top: 1px solid rgb(55, 55, 55);
+}
+
+.ribbonButton{
+    height: 80%;
+    width: 18%;
+    background-repeat: no-repeat;
+    background-size: 4.5vh;
+    background-position-x: center;
+    background-color: rgba(255, 255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ribbonButton p{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1.7vh;
+    color: rgba(178, 178, 178);
+    font-size: 1.5vh;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.selectedTrader p,.selectedNetwork p,.selectedAddTrader p{
+    color: rgb(247,166,0);
+}
+
+.selectedNetwork{
+    background-image: url("img/selected-network.png");
+}
+
+.selectedTrader{
+    background-image: url("img/selected-trader.png");
+}
+
+.selectedAddTrader{
+    background-image: url("img/selected-addTrader.png");
+}
+
+.unselectedNetwork{
+    background-image: url("img/unselected-network.png");
+}
+
+.unselectedTrader{
+    background-image: url("img/unselected-trader.png");
+}
+
+.unselectedAddTrader{
+    background-image: url("img/unselected-addTrader.png");
+}
+
+/*________________ Network _________________*/
+
+.displayZone{
+    height: 89.6vh;
+}
+
+main{
+    height: 89.6%;
+    width: 100%;
+    background-color: rgb(16, 16, 19);
+    position: absolute;
+}
+
+.networkSection .statSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh 0 2vh 0;
+}
+
+.networkSection h3{
+    font-size: 2.5vh;
+    color: white;
+    margin: 2vh 0 0 5%;
+}
+
+.networkSection div div{
+    background-color: rgb(35, 35, 35);
+    width: 40%;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 1.7vh;
+    font-weight: 600;
+}
+
+.networkSection div .networkDivTitle{
+    margin:2.5vh 4vw 2.5vh 4vw;
+    font-size: 2vh;
+}
+
+.networkSection div .networkDivContent{
+    margin:2.5vh 4vw 3vh 4vw;
+    font-size: 2vh;
+}
+
+.networkSection .manageSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh 0 2vh 0;
+}
+
+.networkSection .manageSection div{
+    margin: 0 0 3vh 0;
+    width: 90vw;
+}
+
+.networkSection .manageSection div div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.networkSection .manageSection div .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 6vh;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-weight: 600;
+    border-radius: 1vh;
+    border: 0px;
+    margin: 2vh 0 2vh 0;
+}
+
+
+/*________________ AddTrader _________________*/
+
+#addTraderSection h3{
+    font-size: 3vh;
+    color: white;
+    margin: 3vh 0 3vh 0;
+}
+
+#addTraderSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 5vw 0 5vw;
+    height: 80vh;
+}
+
+#addTraderSection form input{
+    margin: 2vh 0 2vh 0;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+    width: 100%;
+    border: none;
+}
+
+#addTraderSection form input:focus{
+    border: none;
+    outline: none;
+}
+
+#addTraderSection form .input{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-weight: 900;
+    max-width: 41vh;
+    padding-left: 2vh;
+}
+
+#addTraderSection form .button{
+    max-width: 43vh;
+    font-weight: 600;
+}
+
+#addTraderSection form .buttonGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+#addTraderSection form .buttonGroup .button{
+    width: 20vh;
+    margin: 1.5vh;
+}
+
+/*________________ Trader _________________*/
+
+#traderTitle{
+    color: white;
+    margin: 5vw 5vw 0 5vw;
+    font-size: 3vh;
+}
+
+#traderSection{
+    margin: 5vw;
+}
+
+#traderSection .trader{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-size: 2.5vh;
+    padding: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    border-radius: 2vh;
+    margin-bottom: 2vh;
+}
+
+#traderSection .trader div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#traderSection div .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 6vh;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-weight: 600;
+    border-radius: 1vh;
+    border: 0px;
+    margin: 2vh 0 2vh 0;
+}
+
+#traderSection div .deleteButton{
+    font-size: 5vh;
+    padding: 0px;
+    margin: 0px;
+    width: 2vh;
+}
+
+/*________________ Information page _________________*/
+
+.returnButton{
+    text-align: center;
+    font-weight: 600;
+    height: 5vh;
+    width: 5vh;
+    padding: 0 4vh 0 4vh;
+    font-size: 3vh;
+    margin: 2.5vh;
+    border-radius: 1vh;
+}
+
+#informationTitle{
+    margin: 0 5vw 3vh 5vw;
+    font-size: 3vh;
+}
+
+#informationSection{
+    margin-left: 5vw;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+#informationSection .information{
+    background-color: rgb(35, 35, 35);
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    padding: 1vh;
+    width: 86vw;
+}
+
+#informationSection .warning{
+    background-color: rgb(155, 83, 24);
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    padding: 1vh;
+    width: 86vw;
+}
+
+#informationSection .error{
+    background-color: rgb(221, 83, 80);
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    padding: 1vh;
+    width: 86vw;
+}
+
+
+/*________________ Offline _________________*/
+
+#offlineIcon {
+    width: 20vh;
+    border-radius: 5vh;
+}
+
+#offlineBody{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#reloadButtonOffline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 6vh;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-weight: 600;
+    border-radius: 1vh;
+    border: 0px;
+    margin: 2vh 0 2vh 0;
+}
+
+#offlineText{
+    margin: 5vh;
+}
+
+/*________________ Connexion _________________*/
+#loginSection h3{
+    font-size: 3vh;
+    color: white;
+    margin: 3vh 0 3vh 0;
+}
+
+#loginSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 5vw 0 5vw;
+}
+
+#loginSection form input{
+    margin: 2vh 0 2vh 0;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 2.5vh;
+    width: 100%;
+    border: none;
+}
+
+#loginSection form input:focus{
+    border: none;
+    outline: none;
+}
+
+#loginSection form .input{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-weight: 900;
+    max-width: 41vh;
+    padding-left: 2vh;
+}
+
+#loginSection form .button{
+    max-width: 43vh;
+    font-weight: 600;
+}
+
+/*________________ Général color _________________*/
+
+
+.textColorGreen{
+    color: rgb(85, 175, 114);
+}
+
+.textColorRed{
+    color: rgb(221, 83, 80);
+}
+
+.buttonColorGreen{
+    background-color: rgb(85, 175, 114);
+    color: white;
+}
+
+.buttonColorRed{
+    background-color: rgb(221, 83, 80);
+    color: white;
+}
+
+.buttonColorGrey{
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.classicColor{
+    background-color: rgb(247,166,0);
+    color:black;
+}
+
+.disabledClassicButton{
+    background-color: rgb(103,77,27);
+    color:black;
+}

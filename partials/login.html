@@ -1,0 +1,9 @@
+<main>
+    <section id="loginSection">
+        <form>
+            <h3>Connexion</h3>
+            <input type="text" class="input" placeholder="Mot de passe" ng-model="password" ng-change="onChangeEvantHandler()" required>
+            <input type="submit" class="button {{connexionButtonBackColor}}" ng-click="Connexion()" value="{{connexionButtonText}}">
+        </form>
+    </section>
+</main>

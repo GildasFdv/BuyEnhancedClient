@@ -1,0 +1,19 @@
+<main>
+    <section id="addTraderSection">
+        <form>
+            <h3>Ajouter un trader</h3>
+            <!--<p>EE4F67875522537CAF940E5BDA96AF2C</p>-->
+            <input type="text" class="input" placeholder="EncryptedUid" ng-model="encryptedUid" ng-change="onChangeEvantHandler()" required>
+            <!--<p>SpF1bwKBaAWuEWbkxX</p>-->
+            <input type="text" class="input" placeholder="API Key" ng-model="apiKey" ng-change="onChangeEvantHandler()" required>
+            <!--<p>d39sjQb4coXGnQ2yg43SGUWIIQ7NQ6eglrWj</p>-->
+            <input type="text" class="input" placeholder="API Secret" ng-model="apiSecret" ng-change="onChangeEvantHandler()" required>
+            <input type="number" class="input" placeholder="Pourcentage" min="0" max="100" id="pourcentage" ng-model="pourcentage" ng-change="updateDisplayScope()" required>
+            <div class="buttonGroup">
+                <input type="button" class="button {{verifyInformationsButtonColor}}" ng-click="eventHandlerClickVerifyInformations()" value="{{verifyInformationsButtonText}}">
+                <input type="button" class="button buttonColorGrey" ng-click="clearFields()" value="Clear">
+            </div>
+            <input type="submit" class="button {{addTraderButtonBackColor}}" ng-click="addTrader()" value="{{addTraderButtonValue}}">
+        </form>
+    </section>
+</main>
