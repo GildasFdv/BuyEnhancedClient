@@ -1,6 +1,6 @@
 const BASE = location.protocol + "//" + location.host ;
 
-const PREFIX = "V15";
+const PREFIX = "V1";
 
 const CACHED_FILES = [
     `${BASE}/offline.html`

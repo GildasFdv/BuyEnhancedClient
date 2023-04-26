@@ -1,6 +1,6 @@
 myApp.controller("socketInformationController",
 function($scope,Factory,$rootScope,$routeParams){
-    if($rootScope.connected != "true"){
+    if(sessionStorage.getItem("connected") != "true"){
         window.location.href = '#!/login';
     }
 
@@ -18,7 +18,7 @@ function($scope,Factory,$rootScope,$routeParams){
 
     let endpoint = $routeParams.socketEndpoint;
 
-    $scope.returnButtonLinkValue = endpoint == "trader"? "#!/trader":"#!/network"; 
+    $scope.returnButtonLinkValue = (endpoint == "trader"? "#!/trader":"#!/network"); 
 
     let informationSection = document.getElementById("informationSection");
 
